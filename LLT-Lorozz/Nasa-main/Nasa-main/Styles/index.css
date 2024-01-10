@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nasalization', sans-serif;
+
+    /* Background */
+    background-image: url('../Images/background.png');
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Content */
+.content {
+    /* Positioning */
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+
+    /* Direction */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.recent-image {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 44px;
+}
+.see-more {
+    background-color: transparent;
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Font */
+@font-face {
+    font-family: 'Nasalization';
+    src: url('../Fonts/nasalization.otf') format('opentype');
+}
